@@ -1,5 +1,5 @@
 //累積和
-import { _accumulate } from '#types/main';
+import { _accumulate } from '../../../@types/main';
 
 const accumulate: _accumulate = <T>(array: T[]): any[] => {
   const result: any[] = [];
