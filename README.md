@@ -3,10 +3,9 @@
   ![logo](https://raw.githubusercontent.com/redpeacock78/gyokuto/master/docs/logo.svg)   
 
 </div>
----
-<div style="text-align: center;">
+<p align="center">
   Gyokuto is simplifies array manipulation in Javascript.
-</div>
+</p>
 
 ## About Gyokuto
 Gyokuto is simplifies array manipulation in Javascript. The meaning of "Gyokuto" is "玉兔", an imaginary moon rabbit found in Chinese and Japanese folklore that says "there is a rabbit in the moon".  
