@@ -1,5 +1,5 @@
 //対称差集合
-import { _symDiff } from '#types/main';
+import { _symDiff } from '../../../@types/main';
 import * as Union from '#calc/union';
 import * as Intersect from '#calc/intersect';
 import * as curry from '#libs/curry';

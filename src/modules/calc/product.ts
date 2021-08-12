@@ -1,5 +1,5 @@
 //直積集合
-import { _product } from '#types/main';
+import { _product } from '../../../@types/main';
 import * as dedup from '#tools/dedup';
 import * as curry from '#libs/curry';
 
