@@ -23,9 +23,7 @@ export interface _product {
     | (<T>(array_a: T[], array_b?: T[]) => T[][])
     | ((...args_2: U[]) => <T>(array_a: T[], array_b?: T[]) => T[][]);
 }
-export interface _divide {
-  <T>(array: T[][]): T[][];
-}
+
 export interface _calc {
   (): {
     union: _union;
@@ -33,7 +31,6 @@ export interface _calc {
     intersect: _intersect;
     symDiff: _symDiff;
     product: _product;
-    divide: _divide;
   };
 }
 
@@ -43,6 +40,9 @@ export interface _dedup {
 export interface _shuffle {
   <T>(array: T[]): T[];
 }
+export interface _grep {
+  <T>(array: T[], regexp: RegExp): T[];
+}
 export interface _accumulate {
   <T>(array: T | T[]): any[];
 }
@@ -51,6 +51,7 @@ export interface _permutations {
 }
 export interface _tools {
   (): {
+    grep: _grep;
     dedup: _dedup;
     shuffle: _shuffle;
     accumulate: _accumulate;
