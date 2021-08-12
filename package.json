@@ -4,6 +4,7 @@
   "description": "Gyokuto is simplifies array manipulation in Javascript.",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
+  "files": ["dist/", "@types/"],
   "author": "redpeacock78",
   "license": "MIT",
   "devDependencies": {
@@ -21,7 +22,7 @@
     "typescript": "^4.3.5"
   },
   "scripts": {
-    "lint": "eslint src/**/*.ts",
+    "lint": "eslint --fix src/**/*.ts && tsc -p tsconfig.json && tsc-alias -p tsconfig.json",
     "lint-fix": "eslint --fix src/**/*.ts",
     "build": "yarn lint-fix && tsc -p tsconfig.json && tsc-alias -p tsconfig.json",
     "test": "jest",
