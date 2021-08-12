@@ -69,7 +69,7 @@ Performs set operations on two one-dimensional arrays (**It is curried**).
   ```
 ### `tools()`
 Performs operations on one-dimensional arrays.
-- `grep()`:
+- `grep()`: Returns the elements that match the specified regular expression in a one-dimensional array.
   ```javascript
   const array = 'Cannot read property'.split(' ');
   const regexp = /^[A-Z]/g;
