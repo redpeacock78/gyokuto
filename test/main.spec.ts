@@ -37,10 +37,6 @@ describe('Calculation Functions Test', (): void => {
     const product: number[] = calc.product(a)(b) as [];
     expect(product).toStrictEqual(pro);
   });
-  test('Divide Function Test', (): void => {
-    const divide: number[][] = calc.divide(pro);
-    expect(divide).toStrictEqual([a, b]);
-  });
 });
 
 describe('Tools Functions Test', (): void => {
@@ -80,5 +76,14 @@ describe('Tools Functions Test', (): void => {
       [2, 0],
       [2, 1],
     ]);
+  });
+  test('Grep Function Test', (): void => {
+    const grep_1: string[] = tools.grep(
+      'Cannot read property'.split(' '),
+      /^[A-Z]/g
+    );
+    const grep_2: number[] = tools.grep([11, 23, 65, 82, 292, 325], /2/g);
+    expect(grep_1).toStrictEqual(['Cannot']);
+    expect(grep_2).toStrictEqual([23, 82, 292, 325]);
   });
 });
