@@ -1,5 +1,5 @@
 //順列
-import { _permutations } from '#types/main';
+import { _permutations } from '../../../@types/main';
 
 const permutations: _permutations = <T>(array: T[], num?: number): T[] => {
   const result: unknown[] = [];

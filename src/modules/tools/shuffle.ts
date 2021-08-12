@@ -1,5 +1,5 @@
 //シャッフル
-import { _shuffle } from '#types/main';
+import { _shuffle } from '../../../@types/main';
 
 const shuffle: _shuffle = <T>(array: T[]): T[] => {
   const result: T[] = [...array];
