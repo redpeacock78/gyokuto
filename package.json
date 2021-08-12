@@ -2,7 +2,8 @@
   "name": "gyokuto",
   "version": "1.0.0",
   "description": "Gyokuto is simplifies array manipulation in Javascript.",
-  "main": "index.js",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
   "author": "redpeacock78",
   "license": "MIT",
   "devDependencies": {
