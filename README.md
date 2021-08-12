@@ -10,7 +10,7 @@ Usage
 ---
 ## Install
 ```bash
-$ yarn add gyokuto
+$ yarn add 'https://github.com/redpeacock78/gyokuto.git#master'
 ```
 ## Example
 ```javascript
