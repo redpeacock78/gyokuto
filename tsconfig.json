@@ -10,7 +10,6 @@
     "outDir": "dist/",
     "baseUrl": "./src",
     "paths": {
-      "#types/*": ["@types/*"],
       "#libs/*": ["libs/*"],
       "#calc/*": ["modules/calc/*"],
       "#tools/*": ["modules/tools/*"]
