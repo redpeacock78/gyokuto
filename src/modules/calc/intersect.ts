@@ -1,5 +1,5 @@
 //積集合
-import { _intersect } from '#types/main';
+import { _intersect } from '../../../@types/main';
 import * as curry from '#libs/curry';
 
 const intersect: _intersect = curry(<T>(array_a: T[], array_b?: T[]): T[] => {

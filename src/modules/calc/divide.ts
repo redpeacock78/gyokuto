@@ -1,5 +1,5 @@
 //商集合
-import { _divide } from '#types/main';
+import { _divide } from '../../../@types/main';
 
 const divide: _divide = <T>(array: T[][]): T[][] => {
   const x: T[] = [];
