@@ -1,5 +1,12 @@
-![logo](https://github.com/redpeacock78/gyokuto/blob/master/docs/logo.svg)   
-Gyokuto is simplifies array manipulation in Javascript.  
+<div align="center">
+
+  ![logo](https://raw.githubusercontent.com/redpeacock78/gyokuto/master/docs/logo.svg)   
+
+</div>
+---
+<div style="text-align: center;">
+  Gyokuto is simplifies array manipulation in Javascript.
+</div>
 
 ## About Gyokuto
 Gyokuto is simplifies array manipulation in Javascript. The meaning of "Gyokuto" is "玉兔", an imaginary moon rabbit found in Chinese and Japanese folklore that says "there is a rabbit in the moon".  
@@ -107,4 +114,4 @@ Performs operations on one-dimensional arrays.
 
 Lisence
 ---
-This source code is licensed [MIT](https://github.com/redpeacock78/gyokuto/blob/master/LICENCE).
+This source code is licensed [MIT](https://github.com/redpeacock78/gyokuto/blob/master/LICENSE).
