@@ -1,4 +1,4 @@
-import { _calc, _tools, _gyokuto } from './@types/main';
+import { _calc, _tools, _gyokuto } from '../@types/main';
 import * as union from '#calc/union';
 import * as diff from '#calc/diff';
 import * as intersect from '#calc/intersect';
