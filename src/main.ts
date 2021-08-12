@@ -4,7 +4,7 @@ import * as diff from '#calc/diff';
 import * as intersect from '#calc/intersect';
 import * as symDiff from '#calc/symDiff';
 import * as product from '#calc/product';
-import * as divide from '#calc/divide';
+import * as grep from '#tools/grep';
 import * as dedup from '#tools/dedup';
 import * as shuffle from '#tools/shuffle';
 import * as accumulate from '#tools/accumulate';
@@ -17,12 +17,12 @@ const calc: _calc = () => {
     intersect: intersect,
     symDiff: symDiff,
     product: product,
-    divide: divide,
   };
 };
 
 const tools: _tools = () => {
   return {
+    grep: grep,
     dedup: dedup,
     shuffle: shuffle,
     accumulate: accumulate,
