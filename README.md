@@ -1,18 +1,15 @@
-![logo](https://github.com/redpeacock78/gyokuto/blob/master/docs/logo.svg)
----
+![logo](https://github.com/redpeacock78/gyokuto/blob/master/docs/logo.svg)   
 Gyokuto is simplifies array manipulation in Javascript.  
 
-About Gyokuto
----
+## About Gyokuto
 Gyokuto is simplifies array manipulation in Javascript. The meaning of "Gyokuto" is "玉兔", an imaginary moon rabbit found in Chinese and Japanese folklore that says "there is a rabbit in the moon".  
 
-Usage
----
-## Install
+## Usage
+### Install
 ```bash
 $ yarn add 'https://github.com/redpeacock78/gyokuto.git#master'
 ```
-## Example
+### Example
 ```javascript
 import * as gyokuto from 'gyokuto';
 
@@ -31,9 +28,7 @@ const array_2 = [3, 4, 5];
 })();
 ```
 
-API
----
-## Modules
+## API
 ### `calc()`
 Performs set operations on two one-dimensional arrays (**It is curried**).
 - `union()`: Returns the union of the two input one-dimensional arrays.
@@ -74,6 +69,13 @@ Performs set operations on two one-dimensional arrays (**It is curried**).
   ```
 ### `tools()`
 Performs operations on one-dimensional arrays.
+- `grep()`:
+  ```javascript
+  const array = 'Cannot read property'.split(' ');
+  const regexp = /^[A-Z]/g;
+  const grep = gyokuto.tools().grep(array, regexp);
+  console.log(grep); // => ['Cannot']
+  ```
 - `dedup()`: Removes duplicate elements of a one-dimensional array.
   ```javascript
   const array = [1, 2, 2, 3, 3, 3];
