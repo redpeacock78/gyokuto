@@ -11,7 +11,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
       - name: Unshallow
-        run: git fetch --prune --unshallow --tags
+        run: git fetch -f --prune --unshallow --tags
       - name: Install Dependencies
         run: |
           yarn install
