@@ -196,7 +196,7 @@ Performs operations on one-dimensional arrays.
   Returns the cumulative sum of the elements of a one-dimensional array.
   - Types
     ```typescript
-    <T>(array: T | T[]): any[]
+    <T>(array: T[]): any[];
     ```
   - Example
     ```javascript
