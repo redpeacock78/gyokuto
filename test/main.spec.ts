@@ -37,6 +37,22 @@ describe('Calculation Functions Test', (): void => {
     const product: number[] = calc.product(a)(b) as [];
     expect(product).toStrictEqual(pro);
   });
+  test('Super Set Function Test', (): void => {
+    const x: number[] = [1, 2, 3, 4];
+    const y: number[] = [2, 3];
+    const superSet_a: boolean = calc.superSet(x)(y) as boolean;
+    const superSet_b: boolean = calc.superSet(y)(x) as boolean;
+    expect(superSet_a).toBe(true);
+    expect(superSet_b).toBe(false);
+  });
+  test('Sub Set Function Test', (): void => {
+    const x: number[] = [1, 2, 3, 4];
+    const y: number[] = [2, 3];
+    const superSet_a: boolean = calc.subSet(y)(x) as boolean;
+    const superSet_b: boolean = calc.subSet(x)(y) as boolean;
+    expect(superSet_a).toBe(true);
+    expect(superSet_b).toBe(false);
+  });
 });
 
 describe('Tools Functions Test', (): void => {
