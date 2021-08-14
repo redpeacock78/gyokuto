@@ -4,6 +4,8 @@ import * as diff from '#calc/diff';
 import * as intersect from '#calc/intersect';
 import * as symDiff from '#calc/symDiff';
 import * as product from '#calc/product';
+import * as superSet from '#calc/superSet';
+import * as subSet from '#calc/subSet';
 import * as grep from '#tools/grep';
 import * as dedup from '#tools/dedup';
 import * as shuffle from '#tools/shuffle';
@@ -17,6 +19,8 @@ const calc: _calc = () => {
     intersect: intersect,
     symDiff: symDiff,
     product: product,
+    superSet: superSet,
+    subSet: subSet,
   };
 };
 
