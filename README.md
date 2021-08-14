@@ -131,8 +131,8 @@ Performs set operations on two one-dimensional arrays (**It is curried**).
     ```javascript
     const x = [1, 2, 3, 4];
     const y = [2, 3];
-    const superSet_a = calc.superSet(x)(y);
-    const superSet_b = calc.superSet(y)(x);
+    const superSet_a = gyokuto.calc().superSet(x)(y);
+    const superSet_b = gyokuto.calc().superSet(y)(x);
     console.log(superSet_a); // => true
     console.log(superSet_b); // => false
     ```
@@ -148,8 +148,8 @@ Performs set operations on two one-dimensional arrays (**It is curried**).
     ```javascript
     const x = [1, 2, 3, 4];
     const y = [2, 3];
-    const subSet_a = calc.subSet(x)(y);
-    const subSet_b = calc.subSet(y)(x);
+    const subSet_a = gyokuto.calc().subSet(x)(y);
+    const subSet_b = gyokuto.calc().subSet(y)(x);
     console.log(subSet_a); // => false
     console.log(subSet_b); // => true
     ```
