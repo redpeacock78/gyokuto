@@ -6,6 +6,11 @@
 <p align="center">
   Gyokuto is simplifies array manipulation in Javascript.
 </p>
+<div align="center">
+
+[![codecov](https://codecov.io/gh/redpeacock78/gyokuto/branch/refs/tags/v1.2.0/graph/badge.svg?token=O4SF1X4AM5)](https://codecov.io/gh/redpeacock78/gyokuto) [![Release](https://github.com/redpeacock78/gyokuto/actions/workflows/release.yml/badge.svg)](https://github.com/redpeacock78/gyokuto/actions/workflows/release.yml)
+
+</div>
 
 ## About Gyokuto
 Gyokuto is simplifies array manipulation in Javascript.  
@@ -42,7 +47,9 @@ Performs set operations on two one-dimensional arrays (**It is curried**).
   Returns the union of the two input one-dimensional arrays.
   - Types
     ```typescript
-    <T[]>(...args_1: T[][]): (<T>(array_a: T[], array_b?: T[]): T[]) | ((...args_2: T[][]): <T>(array_a: T[], array_b?: T[]): T[])
+    <U>(...args_1: U[]):
+      | (<T>(array_a: T[], array_b?: T[]) => T[])
+      | ((...args_2: U[]) => <T>(array_a: T[], array_b?: T[]) => T[]);
     ```
   - Example
     ```javascript
@@ -55,7 +62,9 @@ Performs set operations on two one-dimensional arrays (**It is curried**).
   Returns the difference set of the two input one-dimensional arrays.
   - Types
     ```typescript
-    <T[]>(...args_1: T[][]): (<T>(array_a: T[], array_b?: T[]): T[]) | ((...args_2: T[][]): <T>(array_a: T[], array_b?: T[]): T[])
+    <U>(...args_1: U[]):
+      | (<T>(array_a: T[], array_b?: T[]) => T[])
+      | ((...args_2: U[]) => <T>(array_a: T[], array_b?: T[]) => T[]);
     ```
   - Example
     ```javascript
@@ -68,7 +77,9 @@ Performs set operations on two one-dimensional arrays (**It is curried**).
   Returns the symmetric difference set of the two input one-dimensional arrays.
   - Types
     ```typescript
-    <T[]>(...args_1: T[][]): (<T>(array_a: T[], array_b?: T[]): T[]) | ((...args_2: T[][]): <T>(array_a: T[], array_b?: T[]): T[])
+    <U>(...args_1: U[]):
+      | (<T>(array_a: T[], array_b?: T[]) => T[])
+      | ((...args_2: U[]) => <T>(array_a: T[], array_b?: T[]) => T[]);
     ```
   - Example
     ```javascript
@@ -81,7 +92,9 @@ Performs set operations on two one-dimensional arrays (**It is curried**).
   Returns the product set of the two input one-dimensional arrays.
   - Types
     ```typescript
-    <T[]>(...args_1: T[][]): (<T>(array_a: T[], array_b?: T[]): T[]) | ((...args_2: T[][]): <T>(array_a: T[], array_b?: T[]): T[])
+    <U>(...args_1: U[]):
+      | (<T>(array_a: T[], array_b?: T[]) => T[])
+      | ((...args_2: U[]) => <T>(array_a: T[], array_b?: T[]) => T[]);
     ```
   - Example
     ```javascript
@@ -94,7 +107,9 @@ Performs set operations on two one-dimensional arrays (**It is curried**).
   Returns the direct product set of the two input one-dimensional arrays.
   - Types
     ```typescript
-    <T[]>(...args_1: T[][]): (<T>(array_a: T[], array_b?: T[]) => T[][]) | ((...args_2: T[][]): <T>(array_a: T[], array_b?: T[]): T[][])
+    <U>(...args_1: U[]):
+      | (<T>(array_a: T[], array_b?: T[]) => T[][])
+      | ((...args_2: U[]) => <T>(array_a: T[], array_b?: T[]) => T[][]);
     ```
   - Example
     ```javascript
@@ -103,6 +118,40 @@ Performs set operations on two one-dimensional arrays (**It is curried**).
     const product = gyokuto.calc().product(a)(b);
     console.log(product); 
     // => [[1, 3], [1, 4], [1, 5], [2, 3], [2, 4], [2, 5], [3, 3], [3, 4], [3, 5]]
+    ```
+- `superSet()`  
+  Determines if the two input arrays are supersets of each other.
+  - Types
+    ```typescript
+    <U>(...args_1: U[]):
+      | (<T>(array_a: T[], array_b?: T[]) => boolean)
+      | ((...args_2: U[]) => <T>(array_a: T[], array_b?: T[]) => boolean);
+    ```
+  - Example
+    ```javascript
+    const x = [1, 2, 3, 4];
+    const y = [2, 3];
+    const superSet_a = calc.superSet(x)(y);
+    const superSet_b = calc.superSet(y)(x);
+    console.log(superSet_a); // => true
+    console.log(superSet_b); // => false
+    ```
+- `subSet()`  
+  Determines if the two input arrays are subsets of each other.
+  - Types
+    ```typescript
+    <U>(...args_1: U[]):
+      | (<T>(array_a: T[], array_b?: T[]) => boolean)
+      | ((...args_2: U[]) => <T>(array_a: T[], array_b?: T[]) => boolean);
+    ```
+  - Example
+    ```javascript
+    const x = [1, 2, 3, 4];
+    const y = [2, 3];
+    const subSet_a = calc.subSet(x)(y);
+    const subSet_b = calc.subSet(y)(x);
+    console.log(subSet_a); // => false
+    console.log(subSet_b); // => true
     ```
 ### `tools()`
 Performs operations on one-dimensional arrays.
