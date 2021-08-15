@@ -7,6 +7,7 @@
     "test/**/*"
   ],
   "compilerOptions": {
+    "downlevelIteration": true,
     "outDir": "dist/",
     "baseUrl": "./src",
     "paths": {
@@ -15,6 +16,7 @@
       "#tools/*": ["modules/tools/*"]
     },
     "module": "commonjs",
-    "target": "ES2019"
+    "target": "ES3",
+    "lib": ["ES2019"]
   }
 }
