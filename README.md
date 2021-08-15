@@ -42,9 +42,9 @@ const array_2 = [3, 4, 5];
 
 ## API
 ### `calc()`
-Performs set operations on two dimensional arrays (**It is curried**).
+Performs set operations on two input arrays (**It is curried**).
 - `union()`  
-  Returns the union of the two input dimensional arrays.
+  Returns the union of the two input arrays.
   - Types
     ```typescript
     <U>(...args_1: U[]):
@@ -59,7 +59,7 @@ Performs set operations on two dimensional arrays (**It is curried**).
     console.log(union); // => [1, 2, 3, 4, 5]
     ```
 - `diff()`  
-  Returns the difference set of the two input dimensional arrays.
+  Returns the difference set of the two input arrays.
   - Types
     ```typescript
     <U>(...args_1: U[]):
@@ -74,7 +74,7 @@ Performs set operations on two dimensional arrays (**It is curried**).
     console.log(diff); // => [1, 2]
     ```
 - `symDiff()`  
-  Returns the symmetric difference set of the two input dimensional arrays.
+  Returns the symmetric difference set of the two input arrays.
   - Types
     ```typescript
     <U>(...args_1: U[]):
@@ -89,7 +89,7 @@ Performs set operations on two dimensional arrays (**It is curried**).
     console.log(sym_diff); // => [1, 2, 4, 5]
     ```
 - `intersect()`  
-  Returns the product set of the two input dimensional arrays.
+  Returns the product set of the two input arrays.
   - Types
     ```typescript
     <U>(...args_1: U[]):
@@ -104,7 +104,7 @@ Performs set operations on two dimensional arrays (**It is curried**).
     console.log(intersect); // => [3]
     ```
 - `product()`  
-  Returns the direct product set of the two input dimensional arrays.
+  Returns the direct product set of the two input arrays.
   - Types
     ```typescript
     <U>(...args_1: U[]):
@@ -154,7 +154,7 @@ Performs set operations on two dimensional arrays (**It is curried**).
     console.log(subSet_b); // => true
     ```
 ### `tools()`
-Performs operations on dimensional arrays.
+Performs operations on arrays.
 - `grep()`  
   Returns the elements that match the specified regular expression in a one-dimensional array.
   - Types
@@ -181,7 +181,7 @@ Performs operations on dimensional arrays.
     console.log(dedup); // => [1, 2, 3]
     ```
 - `shuffle()`  
-  Shuffles the elements of a dimensional array.
+  Shuffles the elements of a array.
   - Types
     ```typescript
     <T>(array: T[]): T[]
@@ -205,7 +205,7 @@ Performs operations on dimensional arrays.
     console.log(accumulate); // => [1, 3, 5, 8, 11, 14]
     ```
 - `permutations()`  
-  Returns the permutation for the elements of a dimensional array.
+  Returns the permutation for the elements of a array.
   - Types
     ```typescript
     <T>(array: T[], num?: number) => T[][]
