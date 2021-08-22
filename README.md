@@ -180,6 +180,18 @@ Performs operations on arrays.
     const dedup = gyokuto.tools().dedup(array);
     console.log(dedup); // => [1, 2, 3]
     ```
+- `depth()`  
+  Returns the depth of the input array as an array.
+  - Types
+    ```typescript
+    <T>(array: T[]): number[]
+    ```
+  - Example
+    ```javascript
+    const array = [1, [2], 3, [[4]], [[[[5]]]]];
+    const depth = gyokuto.tools().depth(array);
+    console.log(depth); // => [1, 2, 1, 3, 5]
+    ```
 - `shuffle()`  
   Shuffles the elements of a array.
   - Types
