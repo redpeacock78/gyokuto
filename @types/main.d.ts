@@ -50,6 +50,11 @@ export interface _calc {
 export interface _dedup {
   <T>(array: T[]): T[];
 }
+
+export interface _depth {
+  <T>(array: T[]): number[];
+}
+
 export interface _shuffle {
   <T>(array: T[]): T[];
 }
@@ -66,6 +71,7 @@ export interface _tools {
   (): {
     grep: _grep;
     dedup: _dedup;
+    depth: _depth;
     shuffle: _shuffle;
     accumulate: _accumulate;
     permutations: _permutations;
