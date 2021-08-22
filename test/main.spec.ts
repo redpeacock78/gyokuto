@@ -62,6 +62,10 @@ describe('Tools Functions Test', (): void => {
     const dedup: number[] = tools.dedup(a);
     expect(dedup).toStrictEqual([1, 2, 3]);
   });
+  test('Depth Function Test', (): void => {
+    const depth: number[] = tools.depth([0, [1], [[2]], [3], [[[5]]], 6]);
+    expect(depth).toStrictEqual([1, 2, 3, 2, 4, 1]);
+  });
   test('Shuffle Function Test', (): void => {
     const shuffle: number[] = tools.shuffle(a);
     expect(Array.isArray(shuffle)).toBe(true);
