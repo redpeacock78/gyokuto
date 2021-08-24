@@ -8,7 +8,7 @@
 </p>
 <div align="center">
 
-[![codecov](https://codecov.io/gh/redpeacock78/gyokuto/branch/refs/tags/v1.3.1/graph/badge.svg?token=O4SF1X4AM5)](https://codecov.io/gh/redpeacock78/gyokuto) [![Release](https://github.com/redpeacock78/gyokuto/actions/workflows/release.yml/badge.svg)](https://github.com/redpeacock78/gyokuto/actions/workflows/release.yml)
+[![codecov](https://codecov.io/gh/redpeacock78/gyokuto/branch/refs/tags/v1.3.2/graph/badge.svg?token=O4SF1X4AM5)](https://codecov.io/gh/redpeacock78/gyokuto) [![Release](https://github.com/redpeacock78/gyokuto/actions/workflows/release.yml/badge.svg)](https://github.com/redpeacock78/gyokuto/actions/workflows/release.yml)
 
 </div>
 
