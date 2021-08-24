@@ -9,14 +9,18 @@
   "compilerOptions": {
     "downlevelIteration": true,
     "outDir": "dist/",
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": {
-      "#libs/*": ["libs/*"],
-      "#calc/*": ["modules/calc/*"],
-      "#tools/*": ["modules/tools/*"]
+      "#api/*": ["src/api/*"],
+      "#libs/*": ["src/libs/*"],
+      "#calc/*": ["src/modules/calc/*"],
+      "#tools/*": ["src/modules/tools/*"]
     },
     "module": "commonjs",
     "target": "ES3",
-    "lib": ["ES2019"]
+    "lib": ["ES2019"],
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true
   }
 }
